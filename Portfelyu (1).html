@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONIYOROV MUHAMMADBILOL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    
+    <canvas class="matrix-rain" id="matrixCanvas"></canvas>
+    
+  
+    <div class="particles" id="particles"></div>
+
+    <header id="header">
+        <div class="container nav-container">
+            <div class="logo">D.M.B<span>projects</span></div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="terminal-text">siz kabi oddiy inson boglanish +998997174181</div>
+                <div class="typing-text" id="typingText"></div>
+                <p class="hero-description">
+                    I transform complex problems into elegant solutions. With expertise in cutting-edge technologies and cybersecurity, I build digital experiences that are not only visually stunning but also robust and secure. Every line of code is crafted with precision and passion.
+                </p>
+                <div style="display: flex; gap: 25px; flex-wrap: wrap;">
+                    <a href="#contact" class="cta-button">
+                        <i class="fas fa-rocket"></i> Start Project
+                    </a>
+                    <a href="#projects" class="cta-button outline">
+                        <i class="fas fa-code"></i> View Work
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image float-animation">
+                <div class="terminal-window" style="background: var(--card-bg); border: 1px solid rgba(0, 180, 255, 0.3); border-radius: var(--card-radius); padding: 30px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);">
+                    <div style="display: flex; gap: 15px; margin-bottom: 30px;">
+                        <div style="width: 15px; height: 15px; background: #ff5f56; border-radius: 50%;"></div>
+                        <div style="width: 15px; height: 15px; background: #ffbd2e; border-radius: 50%;"></div>
+                        <div style="width: 15px; height: 15px; background: #27ca3f; border-radius: 50%;"></div>
+                    </div>
+                    <div style="font-family: 'Share Tech Mono', monospace; color: var(--primary-color); line-height: 1.8;">
+                        <div>$ ./deploy.sh --production</div>
+                        <div>> Building optimized bundles...</div>
+                        <div>> Security scan: PASSED</div>
+                        <div>> Performance: 98/100</div>
+                        <div>> Accessibility: 100/100</div>
+                        <div>> SEO: 100/100</div>
+                        <div>> Deploying to AWS...</div>
+                        <div>> Deployment successful!</div>
+                        <div>> Live at: https://cybercraft.dev</div>
+                        <div style="margin-top: 20px; color: var(--neon-blue);">$ <span style="animation: blink 1s infinite;">█</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical <span>Expertise</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="skill-title">Frontend Engineering</h3>
+                    <p>Building performant, responsive UIs with React, Vue.js, and TypeScript. Expert in state management, component architecture, and modern CSS frameworks.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="skill-title">Backend Development</h3>
+                    <p>Designing scalable APIs and microservices with Node.js, Python, and Go. Experience with databases, caching, message queues, and cloud infrastructure.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="skill-title">Security & DevOps</h3>
+                    <p>Implementing security best practices, CI/CD pipelines, containerization with Docker/Kubernetes, and infrastructure as code with Terraform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Quantum Vault</h3>
+                        <p>Next-generation authentication system with quantum-resistant cryptography, biometric verification, and zero-knowledge proofs.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">WebAuthn</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link github">
+                                <i class="fab fa-github"></i> Source
+                            </a>
+                            <a href="#" class="project-link demo">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Nexus Dashboard</h3>
+                        <p>Real-time network monitoring and threat detection platform with AI-powered anomaly detection and automated response system.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link github">
+                                <i class="fab fa-github"></i> Source
+                            </a>
+                            <a href="#" class="project-link demo">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sentinel AI</h3>
+                        <p>Machine learning security assistant that performs automated vulnerability scanning, threat intelligence, and security recommendations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link github">
+                                <i class="fab fa-github"></i> Source
+                            </a>
+                            <a href="#" class="project-link demo">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's <span>Connect</span></h2>
+            <div class="contact-form fade-in">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">> name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">> Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="your.email@domain.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">> Project Details</label>
+                        <textarea id="message" class="form-control" placeholder="Describe your project, timeline, and requirements..." required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button" style="width: 100%; margin-top: 20px;">
+                        <i class="fas fa-paper-plane"></i> Send Encrypted Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+ 
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/doniyarof12" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-codepen"></i></a>
+                <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">© 2026 CyberCraft. All systems operational. Encrypted connection established.</p>
+        </div>
+    </footer>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
